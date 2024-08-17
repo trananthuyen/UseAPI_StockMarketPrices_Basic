@@ -1,0 +1,35 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#menu {
+    display: inline-block;
+    
+}
+
+#menu #search {
+    
+}
+
+
+
+#table #header a{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#table #header #btn-search {
+   padding-top: 10px;
+   padding-bottom: 20px;
+}
+
+
+#table {
+    padding-top: 50px;
+    margin: 0 30%;
+}
+
+#infor {
+    background-color: beige;
+    padding: 40px 50px;
+}
