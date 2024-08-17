@@ -1,0 +1,50 @@
+﻿
+@using API_StockMarket.Models
+@using API_StockMarket.ServiceContracts;
+
+@model StockSymbolAddRequest;
+
+@{
+    ViewBag.Tilte = "Home";
+    Stock stock = ViewBag.Stock;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Tilte</title>
+    <link href="~/style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="table">
+        <div id="header">
+            <form asp-controller="Home" asp-action="Index" method="post">
+                <div id="search-place"><input asp-for="stockSymbol" type="text" placeholder="search"></div>
+
+                <button >Search</button>
+            </form>
+
+
+        </div>
+        <div id="infor">
+            <h2>Market Price today</h2>
+            <p>Name: @stock.StockSymbol</p>
+            <p>price: @stock.CurrentPrice</p>
+            <p>open price: @stock.OpenPrice</p>
+            <p>lowest price: @stock.LowestPrice  - highest price: @stock.HighestPrice</p>
+            
+            @functions {
+                double CalculatorPriceChange(Stock stock)
+                {
+                    double result = Math.Round(stock.HighestPrice - stock.LowestPrice, 3);
+                    return result;
+                }
+            }
+
+            <p>+- : @CalculatorPriceChange(stock)</p>
+        </div>
+    </div>
+</body>
+</html>

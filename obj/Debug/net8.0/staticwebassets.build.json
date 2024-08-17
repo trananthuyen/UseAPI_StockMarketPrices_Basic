@@ -1,0 +1,39 @@
+{
+  "Version": 1,
+  "Hash": "hgOCLlTK+p4oEImQmIK7NOwEXNto0yCmu4o/0hxnqp0=",
+  "Source": "API_StockMarket",
+  "BasePath": "_content/API_StockMarket",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "API_StockMarket\\wwwroot",
+      "Source": "API_StockMarket",
+      "ContentRoot": "C:\\Users\\trana\\source\\repos\\API_StockMarket\\wwwroot\\",
+      "BasePath": "_content/API_StockMarket",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\trana\\source\\repos\\API_StockMarket\\wwwroot\\style.css",
+      "SourceId": "API_StockMarket",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\trana\\source\\repos\\API_StockMarket\\wwwroot\\",
+      "BasePath": "_content/API_StockMarket",
+      "RelativePath": "style.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\style.css"
+    }
+  ]
+}
